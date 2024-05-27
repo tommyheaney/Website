@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1em 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.1em;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+        main {
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        section {
+            margin-bottom: 2em;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        section h2 {
+            border-bottom: 2px solid #333;
+            padding-bottom: 0.5em;
+        }
+        section h3, section h4 {
+            color: #333;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        .intro, .contact-info {
+            text-align: center;
+        }
+        .project-list ul {
+            list-style: none;
+            padding: 0;
+        }
+        .project-list ul li {
+            margin: 5px 0;
+        }
+        .project-list ul li::before {
+            content: "•";
+            color: #333;
+            margin-right: 5px;
+        }
+        /* Offset for fixed header */
+        section:target::before {
+            content: "";
+            display: block;
+            height: 70px; /* Adjust based on header height */
+            margin-top: -70px; /* Adjust based on header height */
+            visibility: hidden;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home" class="intro">
+            <h2>Introduction</h2>
+            <p>Hello! I am Tommy Heaney, a software developer skilled in C# and .NET Framework. Here you can find my projects and learn more about me.</p>
+        </section>
+        <section id="projects" class="project-list">
+            <h2>Projects</h2>
+            <h3>Car Insurance</h3>
+            <p>This project is an MVC web application that mimics a car insurance website. It takes the user's input on policy information and calculates a quote based on business logic. There is also an admin page that allows staff to view all of the quotes that have been issued.</p>
+            <h4>Technologies Used</h4>
+            <ul>
+                <li>C#</li>
+                <li>ASP.NET MVC</li>
+                <li>Entity Framework</li>
+                <li>SQL Server</li>
+            </ul>
+            <p>GitHub Repository: <a href="https://github.com/tommyheaney/ASP-MVC.git" target="_blank">Car Insurance</a></p>
+
+            <h3>Student Database</h3>
+            <p>This project is a student database management system. It allows for the storage, retrieval, and management of student information.</p>
+            <h4>Technologies Used</h4>
+            <ul>
+                <li>C#</li>
+                <li>ASP.NET MVC</li>
+                <li>Entity Framework</li>
+                <li>SQL Server</li>
+            </ul>
+            <p>GitHub Repository: <a href="https://github.com/tommyheaney/StudentDatabase.git" target="_blank">Student Database</a></p>
+        </section>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I am a software developer with a passion for building web applications using C# and .NET Framework. I have experience in various technologies and am always eager to learn and improve my skills.</p>
+            <h3>Education</h3>
+            <p>Tech Academy</p>
+            <h3>Experience</h3>
+            <p>3 Years learning with the Tech Academy studying JavaScript, CSS, C#, ASP.NET and SQL</p>
+        </section>
+        <section id="contact" class="contact-info">
+            <h2>Contact</h2>
+            <p>If you have any questions or feedback, please contact me at <a href="thomas_heaney@hotmail.com">thomas_heaney@hotmail.com</a>.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Thomas Heaney. All rights reserved.</p>
+    </footer>
+</body>
+</html>
